@@ -1,6 +1,44 @@
+
 @startuml
 
+abstract class Postit {
+    str descricao
+    str tags
+    
+    str __str__()
+}
 
+class PostitSimples extends Postit
+
+class PostitTarefa extends Postit {
+    datetime deadline
+    
+    str __str__()
+}
+
+class Fachada {
+    list<Postit> postits
+    list<Postit> arquivados
+    
+    void criar_postit_simples(PostitSimples postit)
+    void criar_postit_tarefa(PostitTarefa postit)
+    void arquivar_postit(Postit postit)
+    list<Postit> get_postits()
+    list<Postit> get_arquivados()
+    list<Postit> buscar_postits(str tag)
+}
+
+class Interface {
+    void mostrar_dashboard()
+    void mostrar_postits_arquivados()
+    void criar_postit_simples()
+    void criar_postit_tarefa()
+    void arquivar_postit()
+    void buscar_postit()
+}
+
+Fachada *- Postit
+Interface -- Fachada : chama
 
 @enduml
 
