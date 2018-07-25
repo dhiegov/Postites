@@ -6,7 +6,7 @@ u -> (Visualiza dashboard)
 u -> (Cria post-it simples)
 u -> (Cria post-it de tarefas)
 u -> (Arquiva post-it)
-u -> (Vê post-its arquivados)
+u -> (Visualiza post-its arquivados)
 u -> (Busca post-it)
 
 @end
