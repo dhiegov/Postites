@@ -1,5 +1,7 @@
 
 class Interface():
+	eitan ois
 
-  def __init__():
-    pass
+	def __init__():
+		pass
+
