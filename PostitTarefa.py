@@ -1,7 +1,7 @@
 
 from Postit import Postit
 
-class Postit_tarefa(Postit):
+class PostitTarefa(Postit):
 
 	def __init__(tags, descricao, deadline):
 		super().__init__(tags, descricao)

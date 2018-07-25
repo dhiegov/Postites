@@ -4,18 +4,18 @@ class Fachada:
 	def __init__():
 		pass
 
-	def criar_post-it():
+	def criar_postit():
 		pass
 
-	def criar_post-it_tarefa():
+	def criar_postit_tarefa():
 		pass
 
-	def buscar_post-its():
+	def buscar_postits():
 		pass
 
 	def obter_dashboard():
 		pass
 
-	def obter_post-it_arquivados():
+	def obter_postit_arquivados():
 		pass
 
