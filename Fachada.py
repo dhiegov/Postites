@@ -1,6 +1,6 @@
+
 from PostitSimples import PostitSimples
 from PostitTarefa import PostitTarefa
-
 
 class Fachada:
 
