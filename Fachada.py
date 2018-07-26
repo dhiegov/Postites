@@ -36,3 +36,4 @@ class Fachada:
 	def arquivar_postit(self, postit):
 		self.postits.remove(postit)
 		self.arquivados.append(postit)
+

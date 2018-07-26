@@ -92,3 +92,4 @@ class Interface():
 
 		for postit in postits:
 			print(postit)
+

@@ -1,3 +1,4 @@
+
 @begin
 
 actor usuario as u
@@ -10,3 +11,4 @@ u -> (Visualiza post-its arquivados)
 u -> (Busca post-it)
 
 @end
+
