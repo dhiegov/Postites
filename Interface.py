@@ -75,7 +75,12 @@ class Interface():
 			print(contador, postit)
 			contador += 1
 
-		numero = int(input("Número do post-it a ser arquivado: "))
+		try:
+			numero = int(input("Número do post-it a ser arquivado: "))
+		except ValueError:
+			print('Digite um número, por favor.')
+			return
+
 		postit = postits[numero]
 
 		self.fachada.arquivar_postit(postit)
