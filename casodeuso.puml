@@ -1,5 +1,5 @@
 
-@begin
+@startuml
 
 actor usuario as u
 
@@ -10,5 +10,4 @@ u -> (Arquiva post-it)
 u -> (Visualiza post-its arquivados)
 u -> (Busca post-it)
 
-@end
-
+@enduml
