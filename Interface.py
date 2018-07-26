@@ -73,8 +73,10 @@ class Interface():
 		contador = 0
 		for postit in postits:
 			print(contador, postit)
+			contador += 1
 
-		numero = input("Número do post-it a ser arquivado: ")
+		numero = int(input("Número do post-it a ser arquivado: "))
+		postit = postits[numero]
 
 		self.fachada.arquivar_postit(postit)
 
