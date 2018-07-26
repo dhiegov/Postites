@@ -6,13 +6,13 @@ class Interface():
 	def __init__(self):
 		self.fachada = Fachada()
 		self.ajuda = "a Arquivar post-it\n" \
-					 "b Buscar post-it\n" \
-					 "d Mostrar dashboard\n" \
-					 "h Pedir ajuda" \
-					 "m Mostrar post-its arquivados\n" \
-					 "s Criar post-it simples\n" \
-					 "t Criar post-it de tarefa\n" \
-					 "x Fechar"
+		             "b Buscar post-it\n" \
+		             "d Mostrar dashboard\n" \
+		             "h Pedir ajuda" \
+		             "m Mostrar post-its arquivados\n" \
+		             "s Criar post-it simples\n" \
+		             "t Criar post-it de tarefa\n" \
+		             "x Fechar"
 
 	def iniciar(self):
 		print("Insira h para pedir ajuda.")
