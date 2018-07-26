@@ -5,6 +5,42 @@ class Interface():
 
 	def __init__(self):
 		self.fachada = Fachada()
+		self.ajuda = "a Arquivar post-it\n" \
+					 "b Buscar post-it\n" \
+					 "d Mostrar dashboard\n" \
+					 "h Pedir ajuda" \
+					 "m Mostrar post-its arquivados\n" \
+					 "s Criar post-it simples\n" \
+					 "t Criar post-it de tarefa\n" \
+					 "x Fechar"
+
+	def iniciar(self):
+		print("Insira h para pedir ajuda.")
+
+		while True:
+			self.prompt()
+
+	def prompt(self):
+		opcao = input("> ")
+
+		if opcao == "h":
+			print(self.ajuda)
+		elif opcao == "m":
+			self.mostrar_postits_arquivados()
+		elif opcao == "d":
+			self.mostrar_dashboard()
+		elif opcao == "s":
+			self.criar_postit_simples()
+		elif opcao == "t":
+			self.criar_postit_tarefa()
+		elif opcao == "a":
+			self.arquivar_postit()
+		elif opcao == "b":
+			self.buscar_postit()
+		elif opcao == "x":
+			exit(0)
+		else:
+			print("Epa! Opção inexistente.")
 
 	def mostrar_dashboard(self):
 		postits = self.fachada.obter_dashboard()
