@@ -1,5 +1,6 @@
 
 class Postit:
+	"""Classe 'abstrata'."""
 
 	def __init__(self, tags, descricao):
 		self.tags = tags
